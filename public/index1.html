@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>CrimeCatch</title>
+  <link rel="stylesheet" src="style/app.css">
+</head>
+<body class="">
+
+  <!-- NAVBAR -->
+  <nav class="z-depth-0 grey lighten-4">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">
+        <img src="img/logo.png" style="height:50px; width:150px; margin-top:5px;">
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="logged-in1" style="display: none;">
+        <a href="https://maps.crimeometer.com/" class="grey-text modal-trigger" data-target="modal-create"><b>Crime Maps</b></a>
+          </li>
+          <li class="logged-in2" style="display: none;">
+            <a href="charts.html" class="grey-text modal-trigger" data-target="modal-create"><b>Crime Charts</b></a>
+          </li>
+          <li class="logged-in3" style="display: none;">
+            <a href="#" class="grey-text" id="logout"><b>Logout</b></a>
+          </li>
+          <li class="logged-out0" style="display: none;">
+            <a href="index.html" class="grey-text modal-trigger" data-target=""><b>HomePage</b></a>
+          </li>
+          <li class="logged-out1" style="display: none;">
+            <a href="#" class="grey-text modal-trigger" data-target="modal-login"><b>Sign in</b></a>
+          </li>
+          <li class="logged-out2" style="display: none;">
+            <a href="#" class="grey-text modal-trigger" data-target="modal-signup"><b>Sign up</b></a>
+          </li>
+        </span>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+    <div class="modal-content">
+      <h4>Sign up</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Choose password</label>
+        </div>
+        <div class="input-field">
+          <input type="number" id="signup-AadhaarNo" required />
+          <label for="signup-password">AadhaarNo</label>
+        </div>
+        <div class="input-field">
+          <input type="number" id="signup-phoneNo" required />
+          <label for="signup-password">PhoneNo</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="signup-address" required />
+          <label for="signup-address">Address</label>
+        </div>
+        <div class="input-field">
+          <input type="text" id="signup-city" required />
+          <label for="signup-City">City</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+        <p class="error pink-text center-align"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Login</button>
+        <p class="error pink-text center-align"></p>
+      </form>
+    </div>
+  </div>
+
+
+  <!--Header image-->
+  <div class="c">
+    <img src="img/crimeimage.png" class="responsive-img"  style="width:100%;">
+  </div>
+  
+
+
+ 
+
+  <!-- ACCOUNT MODAL if you want to create a link with model to know account info then use modal-account
+  <div id="modal-account" class="modal">
+    <div class="modal-content center-align">
+      <h4>Account details</h4><br />
+      <div class="account-details"></div>
+    </div>
+  </div>-->
+
+  <!-- CREATE GUIDE MODAL 
+  <div id="modal-create" class="modal">
+    <div class="modal-content">
+      <h4>Create Guide</h4><br />
+      <form id="create-form">
+        <div class="input-field">
+          <input type="text" id="title" required>
+          <label for="title">Guide Title</label>
+        </div>
+        <div class="input-field">
+          <textarea id="content" class="materialize-textarea" required></textarea>
+          <label for="content">Guide Content</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Create</button>
+      </form>
+    </div>
+  </div>-->
+
+  <!-- GUIDE LIST 
+  <div class="container" style="margin-top: 40px;">
+    <ul class="collapsible z-depth-0 guides" style="border: none;">
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white">Lorem ipsum dolor sit amet.</div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+    </ul>
+  </div>-->
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBENQqy7d3BwG8Ap-Oc6RVMR9efdT-bNFU",
+      authDomain: "crimeapp-82d26.firebaseapp.com",
+      databaseURL: "https://crimeapp-82d26.firebaseio.com",
+      projectId: "crimeapp-82d26",
+      //storageBucket: "crimeapp-82d26.appspot.com",
+      //messagingSenderId: "1073135831562",
+      appId: "1:1073135831562:web:1d184169bc1c73b1caadf3",
+      measurementId: "G-4YH18ZBHXS"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  
+
+    // make auth and firestore refrences
+    const auth=firebase.auth();
+    const db=firebase.firestore();
+
+    //update firestore settings
+    //db.settings({timestampInSnapshots: true});
+  </script>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

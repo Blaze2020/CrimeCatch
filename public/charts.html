@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charts</title>
+    <link rel="stylesheet" href="style//style.css">
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="charts/charts.js"></script>
+    <script src="charts/linechart.js"></script>
+    <script src="charts/barchart.js"></script>
+    <script src="charts/geochart.js"></script>
+    
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+      <!--Google Fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+<body class="">
+
+  <!-- NAVBAR -->
+  <nav class="z-depth-0 grey lighten-4">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">
+        <img src="img/logo.png" style="width: 180px; margin-top: 10px;">
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="logged-in1">
+          <span>
+        <a href="https://maps.crimeometer.com/" class="grey-text modal-trigger" data-target="modal-create"><b>Crime Maps</b></a>
+          </li>
+          <li class="logged-in2">
+            <a href="#" class="grey-text modal-trigger" data-target="modal-create"><b>Crime Charts</b></a>
+          </li>
+          <li class="logged-in3">
+            <a href="index1.html" class="grey-text modal-trigger" data-target="modal-create"><b>Home</b></a>
+          </li>
+        </span>
+      </ul>
+    </div>
+  </nav>
+
+     <!--Div that will hold the pie chart-->
+     <p class="p1"><b>Crime Statistics</b></p>
+     <div id="piechart_3d" class="piechart"></div>
+     <p class="p4">The piechart shows the information about the types of crimes committed the more<br> 
+      number of aggravated assault are committed then comes larceny-theft a the most<br> common is robbery
+      or burglary the least percentage is murder which is approximately<br> 3.7%.</p>
+     <div id="chart_div" class="barchart"></div>
+     <p class="p3">The Horizontal bar graph sample shows the serious crime number in Cincinnati from<br> 
+      up to 2018, there is a rapid increase in the sexual assault which is exponential the percentage<br> 
+      increase is rapid and the but the good news os there is a decrease in the rape cases as compared<br> 
+      to the previous years which is a good news thanks to the new law enforcement acts to protect<br> 
+      the women rights.</p>
+     <div id="curve_chart" class="curvechart"></div>
+     <p class="p2">If crime is affected by criminal justice policy, it should be possible to contact <br> 
+        explore that relationship empirically, and the United Nations Survey of Crime<br> 
+        Trends and Operations of Criminal Justice Systems contains data on both crime and<br> 
+        criminal justice systems. For crime, the single most reliable crime indicator covered<br>
+        by the Survey is the homicide rate, as, in many countries,most homicides are brought<br> 
+        to the attention of the police.</p>
+      <p class="p5"><b>Map Visulization of Homocide Rate</b></p>
+      <iframe class="frame" src="https://knoema.com/atlas/embed/topics/Crime-Statistics/Homicides/Homicide-rate?type=maps" allowtransparency="true" frameborder="0" width="1515" min-width="560" height="700" scrolling="no"></iframe>
+</body>
+</html>
